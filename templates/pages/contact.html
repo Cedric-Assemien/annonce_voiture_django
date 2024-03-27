@@ -1,0 +1,165 @@
+{% extends 'base.html' %}
+
+{% block title %} | Contactez-nous {% endblock %}
+{% block content %}
+
+<!-- Sub banner start -->
+<div class="sub-banner overview-bgi">
+    <div class="container breadcrumb-area">
+        <div class="breadcrumb-areas">
+            <h1>Poster une annonce</h1>
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'home' %}">Acceuil</a></li>
+                <li class="active"> Contactez-nous</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Sub Banner end -->
+
+<!-- Contact 2 start -->
+<div class="contact-2 content-area-5">
+    <div class="container">
+        <!-- Main title -->
+        <div class="main-title text-center">
+            <h1>Poster une <span>annonce</span></h1>
+            <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p> -->
+        </div>
+        <form action="{% url 'contact' %}" method="POST" enctype="multipart/form-data">
+          {% include 'includes/messages.html' %}
+          {% csrf_token %}
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-md-6 text-left">
+                            <div class="form-group name">
+                                <input type="text" name="name" class="form-control" placeholder="Nom / prenom" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group email">
+                                <input type="email" name="email" class="form-control" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group subject">
+                                <input type="text" name="subject" class="form-control" placeholder="Sujet" required>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="form-group number">
+                                <input type="text" name="phone" class="form-control" placeholder="Number">
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-left">
+                            <div class="form-group name">
+                                <input type="text" name="name" class="form-control" placeholder="La marque" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="form-group name">
+                                <input type="text" name="name" class="form-control" placeholder="Le model" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-left">
+                            <div class="form-group name">
+                                <input type="text" name="name" class="form-control" placeholder="localisation" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="form-group name">
+                                <input type="text" name="name" class="form-control" placeholder="type de voiture" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="form-group name">
+                                <input type="number" name="name" class="form-control" placeholder="nombre de place" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-left">
+                            <div class="form-group name">
+                                <input type="number" name="name" class="form-control" placeholder="kilometrage" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="form-group name">
+                                <input type="number" name="name" class="form-control" placeholder="Année model" required>
+                            </div>
+                        </div>
+                        
+                       <div class="col-md-6 text-left">
+                            <div class="form-group name">
+                                <input type="file" class="form-control" name="image" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="form-group name">
+                                <input type="file" class="form-control" name="image" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-left">
+                            <div class="form-group name">
+                                <input type="file" class="form-control" name="image" required>
+                            </div>
+                        </div>
+                      <div class="col-md-12">
+                            <div class="form-group message">
+                                <textarea class="form-control" name="message" placeholder="Caracteristique/description"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-left">
+                            <div class="send-btn text-center">
+                                <button type="submit" class="btn btn-md button-theme">Soumettre l'annonce</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="contact-info-2">
+                        <div class="ci-box">
+                            <div class="icon">
+                                <i class="flaticon-phone"></i>
+                            </div>
+                            <div class="detail">
+                                <h5>Téléphone:</h5>
+                                <p><a href="#">(+225) 01-53-52-44-31</a></p>
+                            </div>
+                        </div>
+                        <div class="ci-box">
+                            <div class="icon">
+                                <i class="flaticon-mail"></i>
+                            </div>
+                            <div class="detail">
+                                <h5>Email:</h5>
+                                <p><a href="#">IIT@vitib.ci</a></p>
+                            </div>
+                        </div>
+                        <div class="ci-box">
+                            <div class="icon">
+                                <i class="flaticon-earth"></i>
+                            </div>
+                            <div class="detail">
+                                <h5>Web:</h5>
+                                <p><a href="#">Sedrick Kouagni.ci</a></p>
+                            </div>
+                        </div>
+                        <div class="ci-box mb-0">
+                            <div class="icon">
+                                <i class="flaticon-fax"></i>
+                            </div>
+                            <div class="detail">
+                                <h5>fixe:</h5>
+                                <p><a href="#">+225 53-15-15-15</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- Contact 2 end -->
+
+
+{% endblock %}
