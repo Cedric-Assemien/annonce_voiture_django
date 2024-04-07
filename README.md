@@ -1,3 +1,23 @@
+CEDRIC ANNONCES (Annonce de voiture)
+Vous cherchez à acheter ou vendre une voiture ? Vous êtes au bon endroit ! Notre site vous propose une sélection d’annonces de voitures d’occasion, soigneusement vérifiées par nos experts. Parcourez nos annonces, trouvez la voiture de vos rêves et entrez en contact avec les vendeurs en toute simplicité.
+Voici une description détaillée des fonctionnalités de notre site d’annonces de voitures :
+1.	Inscription et Connexion :
+o	Les utilisateurs peuvent s’inscrire sur Cédric annonce  en créant un compte personnel. Ils fourniront des informations telles que leur nom, leur adresse e-mail et un mot de passe.
+o	Une fois inscrits, les utilisateurs pourront se connecter à leur compte en utilisant leurs identifiants.
+o	La connexion permettra aux utilisateurs d’accéder à des fonctionnalités spécifiques, telles que la soumission d’annonces et la consultation des annonces existantes.
+2.	Consultation des Annonces :
+o	Les utilisateurs peuvent parcourir les annonces disponibles sur le site. Ils auront accès à des informations détaillées sur les voitures, telles que la marque, le modèle, l’année, le kilométrage, le prix et des photos.
+o	La recherche peut être filtrée par critères tels que la marque, le modèle, le prix, etc.
+3.	Contact avec les Vendeurs :
+o	Lorsqu’un utilisateur est intéressé par une annonce, il peut contacter le vendeur directement via le site. Un formulaire de contact permettra d’envoyer un message au vendeur.
+o	Le vendeur recevra une notification via le site pour lui indiquer qu’un acheteur potentiel souhaite entrer en contact.
+4.	Publication des Annonces par l’Administrateur :
+o	Seuls les administrateurs du site seront autorisés à publier des annonces. Cela garantit que seules les annonces légitimes et de qualité seront affichées.
+o	Les administrateurs vérifieront les détails de chaque annonce avant de la rendre publique.
+Objectif du Site : Cédric annonce vise à offrir une plateforme conviviale pour les acheteurs potentiels qui souhaitent trouver leur prochaine voiture. Cédric annonce a aussi pour objectif de faciliter la vente et l’achat de voitures d’occasion entre particuliers de manière sécurisée et professionnelle. En mettant l’accent sur la qualité des annonces et la sécurité des transactions, nous créons ainsi un espace de confiance pour les passionnés d’automobiles.
+
+
+
 Voici un guide détaillé pour un utilisateur novice qui souhaite télécharger et exécuter mon projet Django d’annonces de voitures à partir de GitHub. Suivez ces étapes pas à pas :
 1.	Téléchargement du Projet:
 a)	Première méthode
