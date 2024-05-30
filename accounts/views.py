@@ -48,7 +48,7 @@ def register(request):
                     messages.success(request, 'You are registered successfully.')
                     return redirect('login')
         else:
-            messages.error(request, 'Password do not match')
+            messages.error(request, 'les mots de passe ne correspondent pas')
             return redirect('register')
     else:
         return render(request, 'accounts/register.html')

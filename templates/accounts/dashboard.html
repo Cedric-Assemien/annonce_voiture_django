@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 
-{% block title %} | Dashboard {% endblock %}
+{% block title %} | Tableau de bord {% endblock %}
 {% block content %}
 
 <!-- Sub banner start -->
@@ -8,7 +8,7 @@
 <div class="sub-banner overview-bgi">
     <div class="container breadcrumb-area">
         <div class="breadcrumb-areas">
-            <h1>tableau de bord</h1>
+            <h1>Tableau de bord</h1>
             <ul class="breadcrumbs">
                 <li><a href="{% url 'home' %}">Acceuille</a></li>
                 <li><a href="{% url 'contact' %}">Creez une annonce</a></li>
@@ -26,14 +26,14 @@
   {% include 'includes/messages.html' %}
 	<div class="main-title" style="text-align:left !important;">
             <h1>Bienvenue <span>{{user.first_name}} {{user.last_name}},</span></h1>
-            <p>Voici la liste des voitures que vous avez demandées :</p>
+            <p>Voici la liste des biens que vous souhaitez</p>
         </div>
         {% if inquiries %}
             <table class="table table-hover table-bordered table-striped">
               <thead>
               <tr>
                 <th scope="col">#</th>
-                <th scope="col">Nomde voiture</th>
+                <th scope="col">Nom de voiture</th>
                 <th scope="col">Localisation</th>
                 <th scope="col">Action</th>
               </tr>
@@ -46,14 +46,14 @@
                   <th scope="row">1</th>
                   <td>{{inquiry.car_title}}</td>
                   <td>{{inquiry.city}}</td>
-                  <td><a href="{% url 'car_detail' inquiry.car_id %}" class="btn btn-dark">Voir la voiture</a></td>
+                  <td><a href="{% url 'car_detail' inquiry.car_id %}" class="btn btn-dark">Voir le bien</a></td>
                 </tr>
               {% endfor %}
               </tbody>
             </table><!-- Log on to codeastro.com for more projects -->
         {% else %}
         <div class="alert alert-primary" role="alert">
-          <h4>Vous n'avez pas encore de demandes !</h4>
+          <h4>Vous n'avez pas encore de liste de bien !</h4>
         </div>
           
         {% endif %}

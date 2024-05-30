@@ -32,6 +32,12 @@ def car_detail(request, id):
     }
     return render(request, 'cars/car_detail.html', data)
 
+def maison_appart(request):
+    return render(request, 'cars/appart_maison.html')
+
+def terrain(request):
+    return render(request, 'cars/terrain.html')
+
 def car1(request):
     
     paginator = Paginator(Contact_Annonce, 4)

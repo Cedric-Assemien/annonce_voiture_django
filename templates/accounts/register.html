@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 
-{% block title %} | Register {% endblock %}
+{% block title %} | Inscription {% endblock %}
 {% block content %}
 {% load static %}
 <!-- Log on to codeastro.com for more projects -->
 <div class="sub-banner overview-bgi">
     <div class="container breadcrumb-area">
         <div class="breadcrumb-areas">
-            <h1>Register</h1>
+            <h1>Inscription</h1>
             <ul class="breadcrumbs">
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li class="active">Register</li>
+                <li><a href="{% url 'home' %}">Acceuil</a></li>
+                <li class="active">Inscription</li>
             </ul>
         </div>
     </div>
@@ -26,40 +26,40 @@
                             <img src="{% static 'img/logos/cardealerLogo.png' %}" alt="logo">
                         </a>
                     </div>
-                    <h3>Create an account</h3>
+                    <h3>Créez un compte</h3>
 
                     {% include 'includes/messages.html' %}
                     <form action="{% url 'register' %}" method="POST">
                       {% csrf_token %}
                         <div class="form-group form-box">
-                            <input type="text" name="firstname" class="input-text" placeholder="First Name" required>
+                            <input type="text" name="firstname" class="input-text" placeholder="Nom" required>
                             <i class="fa fa-user"></i>
                         </div>
                         <div class="form-group form-box">
-                            <input type="text" name="lastname" class="input-text" placeholder="Last Name" required>
+                            <input type="text" name="lastname" class="input-text" placeholder="Prenom" required>
                             <i class="fa fa-user"></i>
                         </div>
                         <div class="form-group form-box">
-                            <input type="text" name="username" class="input-text" placeholder="Username" required>
+                            <input type="text" name="username" class="input-text" placeholder="Nom utilisateur" required>
                             <i class="fa fa-user"></i>
                         </div>
                         <div class="form-group form-box">
-                            <input type="email" name="email" class="input-text" placeholder="Email Address" required>
+                            <input type="email" name="email" class="input-text" placeholder="Adresse email" required>
                             <i class="flaticon-mail"></i>
                         </div>
                         <div class="form-group form-box">
-                            <input type="password" name="password" class="input-text" placeholder="Password" required>
+                            <input type="password" name="password" class="input-text" placeholder="Mot de passe" required>
                             <i class="flaticon-lock"></i>
                         </div>
                         <div class="form-group form-box">
-                            <input type="password" name="confirm_password" class="input-text" placeholder="Confirm Password" required>
+                            <input type="password" name="confirm_password" class="input-text" placeholder="Confirmer le mot de passe" required>
                             <i class="flaticon-lock"></i>
                         </div>
                         <div class="form-group mb-0 clearfix">
-                            <button type="submit" class="btn-md btn-success float-left">Register</button>
+                            <button type="submit" class="btn-md btn-success float-left">S'inscire</button>
                         </div>
                         <div class="extra-login clearfix">
-                            <span><p>Already a member? <a href="{% url 'login' %}" class="thembo"> Login here</a></p></span>
+                            <span><p>Vous avez déjà un compte? <a href="{% url 'login' %}" class="thembo"> Se connecter</a></p></span>
                         </div>
                         <div class="clearfix"></div>
                      
